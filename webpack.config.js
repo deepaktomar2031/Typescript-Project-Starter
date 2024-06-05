@@ -5,9 +5,9 @@ module.exports = {
   mode: "development",
   entry: "./src/index.ts",
   output: {
-    publicPath: "public",
+    publicPath: "build",
     filename: "bundle.js",
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "build"),
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
@@ -27,7 +27,7 @@ module.exports = {
       patterns: [
         {
           from: path.join(__dirname, "static"),
-          to: path.join(__dirname, "public"),
+          to: path.join(__dirname, "build"),
         },
       ],
     }),

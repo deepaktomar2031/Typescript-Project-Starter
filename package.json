@@ -1,16 +1,16 @@
 {
-  "name": "typescript",
-  "version": "1.0.0",
+  "name": "typescript-project-starter",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch",
-    "serve": "cd public && live-server",
-    "build": "webpack",
-    "start": "npm run build && npm-run-all --parallel watch serve"
+    "serve": "cd build && live-server",
+    "start": "npm run build && npm-run-all --parallel watch serve",
+    "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Deepak Tomar",
   "license": "ISC",
   "devDependencies": {
     "copy-webpack-plugin": "^12.0.2",
